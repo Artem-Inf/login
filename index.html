@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма входа</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+            font-family: Arial, sans-serif;
+        }
+        .login-form {
+            background: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+              padding: 10px; 
+             margin: 10px 0;  
+            display: block;
+            
+              border: 1px solid #180404;  
+            border-radius: 20px;
+            background: linear-gradient(137deg, #00e6e600 7.29%, #00a9f700 26.04%, #9976f900 62.5%, #cc5ec300 100%);
+            color: rgb(255, 252, 252);
+            font-weight: bold;
+           
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+            color: white;
+            border: 0px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background: linear-gradient(130deg, #31dfdf 6.29%, #2293c7 35.04%, #643fca 70.5%, #f338e3 90%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-form">
+        
+        <input type="text" placeholder="User" required>
+        <input type="password" placeholder="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            alert("Login be acepted"); // Здесь можно добавить логику входа
+        }
+    </script>
+
+</body>
+</html>
